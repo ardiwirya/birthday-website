@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241, 241, 241);
+}
+.container {
+  width: 90%;
+  padding: 0.625rem;
+  margin: 0 auto;
+}
+.title {
+  padding: 1rem;
+  min-width: 100%;
+  margin: 2rem auto;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.title h1 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+.row {
+  display: flex;
+  min-width: 100%;
+  padding: 0 auto;
+  margin: 1rem auto;
+}
+.img-box {
+  flex: 25%;
+  padding: 0.375rem;
+}
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+.img-box img {
+  transition: all 1.5s ease;
+}
+
+.img-box:hover img {
+  transform: scale(0.9);
+}
+
+@media (max-width: 50rem) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+nav {
+  background-color: #101010;
+  padding: 5px;
+  top: 0; /* agar navigasi selalu di atas jendela browser saat scrolling. */
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 8em;
+  list-style-type: none;
+}
+
+nav a:hover {
+  color: #bddc20;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #101010;
+  text-align: center;
+  font-weight: bold;
+}
